@@ -1,0 +1,19 @@
+Problem name
+ALGO: Stark's GCD Dilemma
+Problem statement
+Ed Stark is given an array of N positive integers. A1,A2,...An
+She can perform the following operation ONLY ONCE on the array
+Pick an index i such that 1≤i≤N Now, select some integer x and add it to Ai. Note that Ai should not become negative after this operation. 
+Find the maximum possible GCD (Greatest Common Divisor) of all the elements of the array after performing the above operation exactly once. 
+ 
+Input Format
+The first line of each test case contains N - The number of integers in the array A
+The second line contains N space separated integers A1A2A3...An.
+ 
+Output Format
+For every test case, print a single line containing the maximum possible GCD of all the elements of the array. 
+ 
+Constraints
+2≤N≤2×105
+1≤Ai≤109
+

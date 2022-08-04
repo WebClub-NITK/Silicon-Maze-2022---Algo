@@ -1,0 +1,17 @@
+Problem name
+ALGO: Master of Chessboards
+Problem statement
+The Master of Whisperers thought of an interesting problem to amuse himself. However, he could not devise a solution to his problem and wants your help.
+Given a chessboard of size N x N with cells numbered from (1, 1) to (N, N) where the cell (1, 1) is colored white, find the number of diamond shapes that can be formed only using white cells.
+A single cell is not considered to be a diamond. In other words, a diamond contains at least 4 cells.   
+Input Format
+The first line contains t - the number of test cases.
+The first and the only line of each test case contains N, the size of the chess board. 
+ 
+Output Format
+For each test case, print a single line containing the number of diamonds that can be formed. 
+ 
+Constraints
+1≤t≤1000
+1≤N≤2×105
+It is guaranteed that the sum of N over all test cases does not exceed 3×106

@@ -1,0 +1,24 @@
+Problem name
+ALGO: Raven's Ranged Queries
+Problem statement
+Bran has been given an array A of size N by the Master Raven. He must answer Q queries belonging to one of the following types to prove his worthiness. 
+1. Find the sum of values in range [L,R], i.e., A[L]+A[L+1]+A[L+2]+...A[R]
+2. Add an element X to the end of the array. The size of the array will increase by one.
+3. Delete elements in the range [L,R]. The size of the array will decrease byR−L+1. Elements to the right of R will be shifted leftwards and their indices updated.
+Note that the array is 1-indexed.
+Bran however, cannot complete this task alone. Help Bran prove his worthiness by answering all Q queries. 
+ 
+Input Format:
+The first line contains a single integer N(1≤N≤105)
+The second line contains N space separated integers A[1],A[2],[3],...A[N]
+The third line contains a single integer Q (1≤Q≤105)
+The next Q lines contain queries, which are one of the following three types: “1 L R”, “2 X”, “3 L R”. The meaning of the numbers is as explained in the problem statement.
+ 
+Constraints:
+1≤N,Q≤105
+−109≤A[i]≤109for all 1≤i≤N
+1≤L≤R≤Current Length of the Array
+−109≤X≤109
+ 
+Output Format:
+Print the result of each query of type 1.

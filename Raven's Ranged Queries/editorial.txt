@@ -1,0 +1,13 @@
+Since the question invloves ranged sum queries on a dynamic array, we will use segment or fenwick trees to solve the problem. 
+
+For queries of type 2, instead of adding elements to the segment tree, we can initialise the segment tree to have a size of N+Q, and maintain a variable which tells us the index where a new element will be inserted. After this, elements can be inserted in O(log(N+Q)) time per query, which is O(Qlog(N+Q)) for Q queries.
+
+For queries of type 1 and 3, the primary issue that has to be tackled is index translation, i.e., an index x in the array would refer to some other index y in the segment tree due to deletions. To deal with this, we can maintain an ordered set of indices that have not been deleted. When an index is deleted, it is removed from the ordered set. This way, an index x in the array will be the xth smallest element in the ordered set, which can be found in O(log(N+Q)).
+
+Now, we can perform queries 1 and 3 easily. 
+
+For queries of type 1 with end points l and r in the array, we first find out lth and the rth smallest elements in the ordered set (let us call them u and v), and find the sum of elements from u to v using segment or fenwick tree in O(log(N+Q)) per query, which is O(Qlog(N+Q)) for Q queries.
+
+For queries of type 3 with end points l and r, we iterate through every index between l and r, find the corresponding index in the segment tree, and set that element to 0. Then, we delete all the indices set to 0 from the ordered set. This operation takes O(log(N+Q)) time to delete a single element. However, since there can be atmost N+Q elements in the array, there can be atmost N+Q deletions, and hence the amortized time complexity of type 3 queries over all Q queries is O((N+Q)log(N+Q)). 
+
+Using this approach, the time complextiy of the solution will be O((N+Q)log(N+Q)).

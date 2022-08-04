@@ -1,0 +1,27 @@
+Problem name
+ALGO: Storming the Palace
+Problem statement
+Tyrion Lannister wants to destroy the Castle of the Riverlands. However, he is not powerful enough to destroy the whole Castle. Instead, he can destroy only those cells which are unguarded. To deal the maximum damage, he wants to destroy as much of the Castle as possible. He can, however, only destroy a contiguous portion of the Castle. Help him accomplish his goal by finding the longest such unguarded path in the Castle. 
+You are given a string S of length N,representing the Castle consisting of N cells where Si indicates the status of one cell:
+ = 'G' implies that a guard is present.
+ = 'W' implies that a wall is present
+ = '.' implies that the cell is empty.
+Each guard G can view all the cells to their right, as long as it is not obstructed by a wall W. 
+A cell is said to be unguarded if it is not a guard and a wall, and cannot be seen by any guard. 
+An unguarded path is a path (consecutive cells) consisting ONLY of unguarded cells. 
+Find the maximum possible length of an unguarded path in the given string.
+ 
+Input Format
+•	The first line contains a single integer t — the number of test cases.
+•	The first line of each test case contains one integer N - the length of the string.
+•	The second line of each test case contains the string S.
+ 
+Output Format
+•	A single line containing the desired maximum length. 
+ 
+Constraints
+∙1≤t≤100
+∙1≤N≤106
+∙Si = G,W or .
+ 
+

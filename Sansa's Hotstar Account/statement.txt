@@ -1,0 +1,18 @@
+Problem name
+ALGO: Sansa's Hotstar Account
+Problem statement
+Sansa needs make an account on Hotstar to see whether this girl is going to die this week on the HBO's thrilling series - Game of Thrones. For some strange reason, she is able to relate with her like no one else. She has to come up with a username and password. The username and password can consist of numbers and lowercase alphabets only. The strength of the password is equal to the number of characters in the password which are not present in the username. Given the username and password, calculate the strength of the password.
+Input Format
+•	The first line contains a single integer t denoting the number of test cases.
+•	Each test case consists of two lines.
+•	The first line of each test case contains a single string u denoting the username.
+•	The second line of each test case contains a single string p denoting the password.
+Output Format
+•	Output t lines.
+•	Each of the t lines should contain a single integer s, where s is the strength of the password in the corresponding test case.
+Constraints
+∙1≤t≤10
+∙8<|u|<105
+∙8<|p|<105
+ 
+

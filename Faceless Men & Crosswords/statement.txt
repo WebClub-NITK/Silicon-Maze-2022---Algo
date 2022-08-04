@@ -1,0 +1,24 @@
+Problem name
+ALGO: Faceless Men & Crosswords
+Problem statement
+Arya is in the house of Black and White, The temple in Bravos dedicated to the Manifest God where each face is represented by a lowercase alphabet, and she is then presented with the following problem. 
+She is given a string s, and q queries. The ith query consists of a string pi
+Let us call the following structure a crossword with one horizontal line and one vertical line. The horizontal and the vertical lines consist of the same string s, and must intersect at a character common to both the strings. 
+
+In each query, you are given a string  pi.
+She must check if a crossword can be constructed using two instances of s, which has the following property.
+Let ki be the length of the string pi.
+Select characters x1x2x3...xki from the crossword such that they collectively make the string pi and for all 1≤i≤N−1   xi+1 is adjacent to xi 
+A character b is said to be adjacent to a character a if it appears directly to the right of a or directly below a in the crossword.
+For each query, print "YES" if it is possible to build such a crossword, and "NO" if it is not.
+Input Format
+The first line contains t - The number of test cases.
+The first line of each test case contains the string S.
+The second line of each test case contains q - The number of queries
+The following q lines contains each of p1,p2...pq respectively.
+ 
+Constraints
+1≤t≤10
+1≤q≤300
+1≤|S|≤1000
+1≤|pi|≤1000

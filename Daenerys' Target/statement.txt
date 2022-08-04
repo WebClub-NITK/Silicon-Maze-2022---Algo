@@ -1,0 +1,20 @@
+Problem name
+ALGO: Daenerys' Target
+Problem statement
+Master of whisperers tipped Daenerys that if she could assemble an army with an exact strength say target, she could defeat the Night's King. Littlefinger brought her two armies consisting of N soldiers numbered 1 to N. Help Daenerys find the number of ways she could assemble her army of soldiers. However, she may not choose two soldiers numbered consecutively from the same army, and she may not choose two soldiers numbered similarly.
+You are given two arrays A,B  each of size N representing the strength of the soldiers and an integer target. You are to get the target by choosing and adding elements from the two arrays in the following manner. 
+•	Consider all i from 1 to N. For every i, you are to select either Ai or Bi or 0.
+•	You cannot select two consecutive elements from the same array.
+Find the number of ways of choosing the elements from the arrays such that the sum of the chosen elements equals target Since the answer can be very large, print it modulo 1e9+7.
+Input Format
+The first line of each test case contains N and target - The number of elements in the array A and B and the desired sum, respectively
+The second line contains N numbers A1,A2,A3...AN
+The third line contains N numbers B1,B2,B3...BN
+ 
+Output Format
+Print a single integer denoting the number of ways modulo 1e9+7
+ 
+Constraints
+1≤N≤100
+1≤target≤5000
+1≤Ai,Bi≤target

@@ -1,0 +1,25 @@
+Problem name
+ALGO: Valley of Towers
+Problem statement
+Jamie Lannister must cross a valley beyond the wall, to save his "sister" Cersei from her drunk husband Robert. The valley is a series of towers that he can only cross if the height of each tower is the same as any of its adjacent towers. You have the power to change the height of any of these towers as you see fit. Help him cross the valley and save Cersei. 
+Given an array A of length N representing the height of these towers, you can perform the following operation on the array any number of times. In one move, you can increment or decrement the height of any of these towers.  
+Formally, in one operation, you can do the following. 
+Ai:=Ai±1, for any 1 <= i <= N
+Find out the minimum number of operations needed to convert the array to an array B such that each element is equal to at least one of its adjacent elements in the resulting array B.
+Formally, in B, 
+∙B1=B2
+∙Bi−1=Bi or Bi+1=Bi
+∙BN−1=BN
+ 
+Constraints
+1≤t≤100
+5≤N≤1000
+1≤Ai≤109
+It is guaranteed that the sum of N of all t does not exceed 1000
+Input Format
+The first line contains t - The number of test cases. 
+The first line of each test case contains an integer N
+The second line of each test case contains N space-separated integers A1,A2,A3,..AN
+Output Format
+Output a single line denoting the minimum number of operations needed to be performed
+

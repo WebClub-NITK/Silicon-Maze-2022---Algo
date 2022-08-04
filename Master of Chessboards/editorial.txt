@@ -1,0 +1,10 @@
+Expected time complexity : O(n)
+Expected space complexity : O(n) or O(1)
+
+It can be observed that two vertices of a diamond are on the same row, and two are on the same column. 
+
+For each row, count the number of diamonds that have two of its vertices on the same row, and sum up the answers.
+
+First, count the number of white cells in a row (call it w). Suppose you selected two consecutive white cells (two white cells separated by a black cell) in row number i. You can select (w - 1) such pairs. A diamond is formed by selecting the appropriate white cell on the row (i - 1) and (i + 1). Similarly, for two white cells with two black cells in between (there are w - 2 such pairs), a diamond is formed by selecting a white cell on the row (i - 2) and (i + 2). The process continues till min(i - 1, n - row), call it s.
+
+Thus, the answer for a row = (w - 1) + (w - 2) + … (w - s), which can be calculated in O(1) since it is the sum of an arithmetic progression.
