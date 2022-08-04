@@ -1,0 +1,15 @@
+Problem name
+ALGO: Snow and Ygritte
+Problem statement
+Jon Snow needs to grow a tree to climb the north wall of Castle Black to rescue Ygritte but there is something very peculiar about this tree. He has an array A of size N and want to know if a Rooted Binary Tree (binary tree rooted at any node) may be created such that f(i) = A[i] where  f(i)  is the size of the subtree rooted at i. Wherever Jon Snow became aware of rooted binary trees is a mystery of its own. Help him discover if such a tree exists.
+ 
+Input Format
+The first line contains N - The size of the array. 
+The second line contains N space seperated integers A1A2A3...AN where Ai is the size of the subtree rooted at i
+Output Format
+If it is impossible to form a suitable tree, print "NO" (without quotes). Otherwise, print "YES",
+Constraints
+1≤N≤20
+1≤Ai≤N
+ 
+

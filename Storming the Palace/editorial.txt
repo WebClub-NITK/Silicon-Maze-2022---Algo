@@ -1,0 +1,7 @@
+We need to find the maximum among all available lengths of the unguarded paths. Let us consider currlen to be the length of the current path, and maxlen to be the maximum found until now.
+ 
+Using a boolean value isGuarded, we can check the status of each cell and add it to the length of the path accordingly.
+
+If the current cell is G, we set isGuarded to true as the guard can view cells to the right, and currlen is reset to 0. If it is W, then isGuarded is false as cells present in the remaining part of the string are not affected by any previous guards. However, currlen is again reset to 0 as the wall causes the previous path(s), if any, to end.
+
+If the character is a . ,  we check if it is guarded. If the cell is guarded, currlen remains to be 0. In case the cell is unguarded, increment currlen, and set maxlen equal to the maximum of (maxlen, currlen).

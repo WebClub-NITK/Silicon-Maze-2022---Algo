@@ -1,0 +1,23 @@
+Problem name
+ALGO: King's Landing
+Problem statement
+In King's Landing, the overall time to traverse a route from town U to town V is the same as the minimum distance between two adjacent towns along the route. Weird right? Just GoT things. Your task is to find the maximum possible time it might take to travel from U to V.
+Mathematically,
+Given an undirected graph G(V,E) and two vertices u and v,  you have to find the maximum of the minimum weighted edge along all paths from u to v. 
+ 
+Input Format
+The first line contains a single integer t - the number of test cases. 
+For each test case, 
+The first line contains two integers n and m -  the number of vertices and the number of edges in the graph.
+Each of the following m lines contains three integers x y w, representing an edge between x and y with weight w.
+The last line contains the two integers u and v, denoting the towns U and V respectively. 
+ 
+Output Format 
+Output one line corresponding to each test case with an integer denoting the maximum of the minimum weighted edge along all paths.
+ 
+Constraints
+2≤|V|,|E|≤105
+1≤x,y≤|V|
+1≤w≤109
+ 
+

@@ -1,0 +1,22 @@
+If we can add or subtract any value implies we can change any positive integer into any other positive integer
+
+gcd(a,b) <= min(a,b)  where a, b are any two positive integers.
+The array elements are A1, A2, A3, ……..An
+Let us say we try to update the ith element Ai
+
+	A1, A2, A3, ………Ai,............An
+
+Now 	gcd(A1, A2, A3, ………Ai,............An) is what we want to maximize
+   => 	gcd(A1, A2, A3, ……...............An, Ai)
+
+Let the gcd(A1, A2, A3, ……...............An) = g 
+i.e the gcd of all elements except Ai is g
+So 
+gcd(A1, A2, A3, ……...............An, Ai)  = gcd(g, Ai)
+
+gcd(g, Ai) <= min(g, Ai)
+So the max gcd will be when we substitute Ai as a multiple of g so that gcd(g, Ai) = g
+
+The gcd of all numbers expect a particular element Ai can be calculated using prefix and suffix arrays storing the gcd from the left and right respectively except that element
+
+Time complexity: O(n) 
